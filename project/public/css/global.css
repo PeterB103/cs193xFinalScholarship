@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates&display=swap');
+
+/* Defining Global CSS */
+body{
+  margin: 0;
+  font-family: "Montserrat Alternates", sans-serif;
+  background-color: #FF5864;
+}
+
+
+button {
+  background-color: white;
+  border: 2px solid #FF5864;
+  border-radius: 0.75rem;
+  color: black;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 0.25rem 1.5rem;
+}
+
+button:hover {
+  background-color: lightgrey;
+}
+
+/*From Assignment 3.1 input CSS*/
+input{
+  background-color: #e6ecf0;
+  border: none;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  min-width: 0;
+  padding: 0.5rem;
+  margin-bottom: 1.5em;
+}
+
+/* Styling Classes */
+.mainText {
+  color: #FFFFFF;
+  font-weight: bold;
+}
+
+.basicScholarshipGrouping { 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.buttonLink{
+  padding: 0.25rem 1rem; 
+  height: 2rem; 
+}
+
+.inputLabel {
+  display: block;
+  font-size: 23px;
+}
+
+.formButtons{
+  display: flex;
+  justify-content: center;
+  gap: 5rem;
+}
+
+.hidden{
+  display: none;
+}

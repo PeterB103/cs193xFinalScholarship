@@ -1,0 +1,4 @@
+db = connect("finalProjectScholarship");
+db.dropDatabase();
+db.Scholarships.insertOne({ id: 1, scholarshipName: "Appple Pathways", organizationName: "Apple", dei: "FLI, POC", quantity: "$15000 for three years", open: "7/28/23", due:"10/1/23", grade:"Rising College Juniors", scholarshipLink: "https://programs.applyists.com/applepathwaysacademy/"  });
+db.Scholarships.insertOne({ id: 2, scholarshipName: "Adelante Scholarship", organizationName: "VALHEN", dei: "FLI, Latinx", quantity: "$2500 for four years", open: "11/28/24", due:"02/28/24", grade:"High School Seniors+", scholarshipLink: "https://www.valhen.org/adelante"  });

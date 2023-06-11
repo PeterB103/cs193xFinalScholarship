@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Schinder</title>
+
+    <!-- This line provides automatic page and style reloading when files change -->
+    <script type="module" src="/lib/client/updater.js"></script>
+    <link rel="stylesheet" href="css/index.css">
+    <script type="module" src="js/index.js"></script>
+  </head>
+
+  <body>
+    <header id="navBar">
+      <div id="widthContainer">
+        <h1 class="mainText"> Schinder 🔥</h1>
+        <div id = "buttonsHeader">
+        <button type="button" id="addScholarship" class="buttonLink"> Add Scholarship</button>
+        <button type="button" id="home" class="buttonLink"> 🏠 Home</button>
+        </div>
+      </div>
+    </header>
+    
+    <main class="scholarshipInfo">
+      <!--Scholarship Context-->
+      <section id="basicScholarshipContext">
+          <div class="basicScholarshipGrouping">
+            <h2> Scholarship Title: <br> <span class = "mainText" id = "scholarshipName">  </span> </h2>
+            <h2> From: <br> <span class = "mainText" id = "organizationName"> </span> </h2>
+          </div>
+      </section>
+    <section id="nextButton">
+      <button type="button" id="next" class="buttonLink">Next ➡️ </button>
+  </section>
+           
+  <!-- replace button text with filled heart when clicked ♥   -->
+  <div> 
+    <button type="button" id="heart" class="buttonLink"> 🖤 </button>
+  </div> 
+  
+  <!--Scholarship In depth Info-->        
+  <section id="information">
+      <div id="infoGrouping">
+        <h2> DEI Tags: <span class = "mainText" id = "dei"> </span> </h2>
+        <h2> Quantity: <span class = "mainText" id = "quantity"> </span> </h2>
+        <h2> Opens: <span class = "mainText" id = "open"> </span> </h2>
+        <h2> Due: <span class = "mainText" id = "due"> </span> </h2>
+        <h2> Minimum Grade Level Requirement: <span class = "mainText" id = "grade"> </span> </h2>
+        <h2> Link to scholarship: <span class = "mainText" id = "scholarshipLink"> </span> </h2>
+      </div>
+    </section>
+  </main>
+
+<!-- HTML for the scholarship addition form -->
+  <main class="scholarshipInfoForm hidden">
+    <section class="basicScholarshipGrouping">
+      <h1 id="databaseText"> Add a missing scholarship into our database! </h1>
+    </section>
+
+    <form id="addForm">
+      <section id="inputSection">
+        <label class = "mainText inputLabel"> Scholarship Name: <input name="scholarshipName" placeholder="Google Scholarship"> </label>
+        <label class = "mainText inputLabel"> Scholarship Organization: <input name="organizationName" placeholder="Google"> </label>
+        <label class = "mainText inputLabel"> DEI TAGS: <input name="dei" placeholder="FLI, Latinx, LGBTQ+"> </label>
+        <label class = "mainText inputLabel"> Quantity: <input name="quantity" placeholder="$500"> </label>
+        <label class = "mainText inputLabel"> Opens: <input name="open"  placeholder="6/13/23"> </label>
+        <label class = "mainText inputLabel"> Due: <input name="due" placeholder="9/24/23"> </label>
+        <label class = "mainText inputLabel"> Minimum Grade Level Requirement: <input name="grade" placeholder="College Junior"> </label>
+        <label class = "mainText inputLabel"> Link to scholarship: <input name="scholarshipLink" placeholder="www.scholarship.com"> </label>
+      </section>
+      
+    <!--Buttons for the form-->
+    <section class = "formButtons">
+      <button type="button" name="clear">Clear ❌</button>
+      <button type="submit" name="submit">Submit ✅</button>
+    </section>
+    </form> 
+  </main>
+  </body>        
+</html>

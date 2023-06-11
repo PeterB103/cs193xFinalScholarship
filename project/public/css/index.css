@@ -1,0 +1,84 @@
+@import "./global.css";
+
+/***** Header Style*****/
+#widthContainer {
+  flex-grow: 1;
+  background: #000000;
+  font-family: "Montserrat Alternates", sans-serif;
+}
+
+#navBar {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  background-color: #FFFFFF; 
+  margin-bottom: 1.5rem;
+}
+
+#navBar #widthContainer, #navBar #widthContainer #buttonsHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#navBar #widthContainer #buttonsHeader{
+  gap: 0.5rem
+}
+
+/*Scholarship Context*/
+#basicScholarshipContext {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.8em;
+  font-weight: bold;
+}
+
+/*Changing all h2 elements within the context section>*/
+#basicScholarshipContext h2 {
+  font-size: 1.1em; /* Normal Size font is too large */
+}
+
+#basicScholarshipContext .basicScholarshipGrouping {
+  text-align: center;
+  width: 75%;
+}
+
+/*Scholarship In depth Information */
+#information {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  align-items: center;
+}
+
+/*Like Button */
+#heart{
+    position: absolute;
+    top: 5rem;
+    right: 2rem;
+    background-color: transparent;
+    font-size: 8rem;
+    border: 0px;
+}
+
+/*Next Button*/
+#nextButton{
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 1rem;
+}
+
+
+/* CSS for add scholarship page */
+#databaseText{
+  font-size: 2.1em;
+  font-weight: 300;
+  font-weight: bold;
+}
+
+#inputSection{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
